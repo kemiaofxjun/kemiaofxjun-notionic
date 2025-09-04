@@ -1,0 +1,11 @@
+name: 自动更新保活
+on: 
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    name: 重塑博客
+    runs-on: ubuntu-latest
+    steps:
+      - name: 让vercel启动
+        run: curl -X POST "https://api.vercel.com/v1/integrations/deploy/prj_yb2SAKbrGJgZzKHXrQtoAAckP34m/9U3RXyT4L1"
