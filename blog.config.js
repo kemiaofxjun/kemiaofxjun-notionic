@@ -3,8 +3,8 @@ const BLOG = {
   author: '克喵爱吃卤面',
   email: 'me@mail.kemeow.top',
   link: 'https://notion.kemiaosw.top/',
-  newsletter: 'Notionic Weekly',
-  description: 'A static blog build on top of Notion and Next.js',
+  newsletter: '克喵的博客',
+  description: '愿你看清一切真相后，依旧热爱你的家人和朋友。',
   lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   timezone: 'Asia/Shanghai', // See https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for all options.
   appearance: 'auto', // ['light', 'dark', 'auto'],
@@ -16,7 +16,7 @@ const BLOG = {
   postsPerPage: 10,
   sortByDate: true,
   pagesShow: {
-    newsletter: true,
+    newsletter: false,
     notes: true,
     projects: true,
     contact: true,
@@ -67,7 +67,7 @@ const BLOG = {
   },
   comment: {
     // support provider: utterances, supacomments
-    provider: 'utterances', // leave it empty if you don't need any comment plugin
+    provider: 'supacomments', // leave it empty if you don't need any comment plugin
     supaCommentsConfig: {
       supabaseUrl: 'https://tkmkwpukqhwcbqgzywcm.supabase.co', // The url of your Supabase instance
       supabaseAnonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrbWt3cHVrcWh3Y2JxZ3p5d2NtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY5ODYxNzksImV4cCI6MjA3MjU2MjE3OX0.B0yoNvK4XnaKC4zwDwm0vPqn9H1d2E8N6WMcmCaYFLI' // The anonymous key of your Supabase instance
